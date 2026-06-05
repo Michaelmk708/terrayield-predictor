@@ -1,0 +1,12 @@
+[build]
+  # The command Netlify will run to compile your React code
+  command = "npm run build"
+  
+  # The folder Netlify should serve to the public after building
+  publish = "dist"
+
+# This handles React routing so page refreshes don't cause 404 errors
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
